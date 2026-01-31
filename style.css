@@ -576,6 +576,11 @@ header {
         font-size: 0.85rem;
         text-align: center;
     }
+    .images{
+        max-width:90%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .navbar-logo,
@@ -698,4 +703,12 @@ header {
 .amazon-in:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.cardcontent {
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
