@@ -579,7 +579,11 @@ header {
     .second4 {
         gap: 0;
     }
-    
+
+    .amazon-in {
+        display: none;
+    }
+
 }
 
 @media (max-width: 420px) {
