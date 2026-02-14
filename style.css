@@ -7,12 +7,12 @@
 html,
 body {
     overflow-x: hidden;
+    background-color: #e3e6e6;
 }
 
 .page {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    background-color: #e3e6e6;
 }
 
 header {
@@ -371,6 +371,10 @@ header {
         flex: 0 1 clamp(80px, 32%, 360px);
     }
 
+    .list2{
+        display:none;
+    }
+
     *:hover {
         transform: none !important;
         box-shadow: none !important;
@@ -435,32 +439,45 @@ header {
         display: flex;
     }
 
-    .navbar {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 6px 0;
+    .list3,
+    .list2,
+    .to{
+        display:none;
     }
 
+      .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 6px 10px;
 
-    .nav-fill {
-        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-left {
+        order: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-right {
         order: 2;
         display: flex;
+        align-items: center;
+    }
+
+    .nav-fill {
+        order: 3;
+        width: 100%;
+        flex: 0 0 100%;
+        margin-top: 8px;
+        display: flex;
         justify-content: center;
-        margin-top: 6px;
     }
 
     .search-box {
         width: 95%;
     }
-
-
-    .flag,
-    .return,
-    .amazon-in {
-        display: none;
-    }
-
 
     .registry,
     .sell {
@@ -478,7 +495,7 @@ header {
 
     .products {
         padding-left: 0;
-        width: 100;
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -580,6 +597,12 @@ header {
         max-width:90%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 420px){
+    .flag{
+        display: none;
     }
 }
 
@@ -711,4 +734,73 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.back{
+    background-color: #37475A;
+    height:5%;
+    font-size: clamp(0.55rem, 1.2vw, 0.85rem);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.back a{
+    text-decoration: none;
+    color:white;
+}
+.footer{
+    background-color: #232F3E;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:35%;
+    width:100%;
+    padding-bottom:2%;
+    padding-top: 2%;
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 1.4vw, 0.75rem);
+    opacity: 0.8;
+}
+ul{
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    gap:clamp(1rem,1.4vw,1.5rem);
+    width:100%;
+}
+li{
+    margin-top:clamp(0.1rem,1.2vw,0.4rem);
+}
+.heading{
+    font-weight: 600;
+    margin-bottom: 5%;
+    font-size: clamp(0.8rem, 1.4vw, 1rem);
+}
+.end{
+    background-color: #131A22;
+    color:white;
+    height:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8%;
+}
+.first-end{
+    display:flex;
+    gap:2%;
+    font-size: clamp(0.5rem, 1.2vw, 0.75rem);
+    width:100%;
+    justify-content: center;
+}
+.second-end{
+    font-size: clamp(0.5rem, 1.2vw, 0.75rem);
 }
