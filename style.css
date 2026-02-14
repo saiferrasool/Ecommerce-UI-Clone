@@ -382,9 +382,14 @@ header {
         padding: 0;
         box-sizing: border-box;
     }
-    html,body,.page,.main{
+
+    html,
+    body,
+    .page,
+    .main {
         background-color: white;
     }
+
     .page,
     .main,
     .products {
@@ -392,6 +397,7 @@ header {
         max-width: 100vw;
         overflow-x: hidden;
     }
+
     .card4,
     .card8 {
         display: flex;
@@ -556,6 +562,26 @@ header {
         max-width: 90%;
         display: flex;
         justify-content: center;
+    }
+
+    .card {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 16px 12px;
+    }
+
+    .products {
+        gap: 0;
+    }
+
+    .first4,
+    .second4 {
+        gap: 0;
+    }
+
+    .products{
+        background-color: white;
     }
 }
 
