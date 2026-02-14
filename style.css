@@ -579,10 +579,7 @@ header {
     .second4 {
         gap: 0;
     }
-
-    .products{
-        background-color: white;
-    }
+    
 }
 
 @media (max-width: 420px) {
