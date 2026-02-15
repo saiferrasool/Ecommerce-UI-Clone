@@ -444,6 +444,10 @@ header {
         width: 95%;
     }
 
+    .select{
+        width:40px;
+    }
+
     .registry,
     .sell {
         display: none;
